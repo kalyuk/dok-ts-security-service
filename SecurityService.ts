@@ -1,5 +1,5 @@
-import crypto from 'crypto';
-import Hashids from 'hashids';
+import * as crypto from 'crypto';
+import * as Hashids from 'hashids';
 import {BaseService} from 'dok-ts/base/BaseService';
 
 export class SecurityService extends BaseService {
@@ -25,7 +25,7 @@ export class SecurityService extends BaseService {
     return hash.digest('hex');
   }
 
-  public hashVerify(string, hash, options) {
+  public hashVerify(string, hash, options?) {
     return this.getHash(string, options) === hash;
   }
 

@@ -7,3 +7,5 @@ src
 nodemon.json
 tsconfig.json
 tslint.json
+index.ts
+SecurityService.ts
